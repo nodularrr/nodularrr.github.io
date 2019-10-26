@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BX SLIDER</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <style>
+        .slider img {
+            display: block;
+            width: 100%;
+            height: 300 px;
+            margin: auto;
+        }
+
+        .badan
+        {
+            width: 1000px; 
+            border: 1px solid black;
+            background-color: azure;
+            margin: 20px auto
+        }
+
+        .konten
+        {
+            padding: 20px;
+        }
+        
+        body
+        {
+            background-color:black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="badan">
+    <div class="slider">
+        <div><img src="GAMBAR/1762.jpg" alt="Looks good, rite?" title="Plant Visit Di PT. Cilegon Fabricator"></div>
+        <div><img src="GAMBAR/1763.jpg" alt="Looks good, rite?"></div>
+        <div><img src="GAMBAR/1764.jpg" alt="Looks good, rite?"></div>
+    </div>
+
+    <div class="konten">
+        <h2 align="center">HIMAMET UNJANI</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, alias quibusdam. Eos culpa natus corrupti perspiciatis? Exercitationem, autem nesciunt ad soluta maiores vero veritatis quis praesentium fuga aliquam. Architecto, culpa?
+        </p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider(
+                {
+                    auto: true,
+                    //autoControls: true,
+                   // stopAutoOnClick: true,
+                    pager: true,
+                    //slideWidth: 300;
+                    mode: "fade",
+                    captions: true,
+                });
+        });
+    </script>
+
+</body>
+
+</html>
